@@ -1,4 +1,4 @@
-sudo yum update –y
+efefesudo yum update –y
 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 sudo yum upgrade
@@ -14,3 +14,4 @@ echo '/var/tmp_disk /tmp none bind 0 0' | sudo tee -a /etc/fstab
 sudo systemctl mask tmp.mount
 df -h /tmp
 sudo systemctl restart jenkins
+
